@@ -14,7 +14,7 @@
     2.Abrir carpeta de proyecto<br>
     3.Abrir script index.html<br>con navegador de su eleccion.
 </p><br>
-<hr width="280"><br><a href="https://aressantonio.github.io/Maquetado-Nav-Bar-Responsive/" target="_blank">Visitar sitio:</a><hr width="280"><br>
+<hr width="280"><br><a href="https://aressantonio.github.io/Maquetado-Nav-Bar-Responsive/" target="_blank">Visitar sitio.</a><hr width="280"><br>
 
 <table>
     <tr>
