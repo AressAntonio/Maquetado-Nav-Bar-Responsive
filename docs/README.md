@@ -1,4 +1,5 @@
 # Maquetado||Nav-Bar Responsive
+<p>Este es un pequeño maquetado de una nav-bar responsiva.</p>
 
 <h2>Tecnologias utilizadas:</h2>
 <ul>
