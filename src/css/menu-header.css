@@ -1,0 +1,222 @@
+body{
+	font-family: monospace ;
+	margin: 0;
+	padding: 0;
+}
+
+/*.material-symbols-Outline es la 
+propiedad de la imagen para 
+el menu anburguesa*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.collapsed{
+	display: none;
+}
+
+
+nav{
+	background-color: black;
+	color: white;
+	width: 100%;
+	border-radius: 10px;
+	border: solid 2px white;
+	box-shadow: 0 0 10px rebeccapurple;
+}
+
+nav .mobile{
+ display: none;
+}
+
+nav .mobile .header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-left: 10px;
+}
+
+nav .mobile .header .more button {
+ border-radius: 8px;
+ padding: 5px;
+ cursor: pointer;
+}
+
+nav .logo{
+	min-width: 250px;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 20px 25px;
+}
+
+nav a:hover{
+	color: black;
+	background-color: #00c3ff;
+}
+
+
+nav .desktop{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary{
+
+	display: flex;
+}
+
+nav .desktop .secondary.mini{
+
+	display: none; /*La propiedad display: none; mantiene oculto el stilo css y la etiqueta html en el que es usada*/
+
+}
+
+/*Propiedades que se muestran al reducir el tamaño
+de la pagina web a 800px*/
+
+@media screen and (max-width: 800px){
+	nav .logo{
+		min-width: 100px;
+	}
+
+	nav .secondary.full{
+		display: none;
+	}
+	nav .secondary.mini{
+		display: block !important; /*La propiedad display: block mantinen visible el estilo y la etiqueta html en el que fue usada*/
+	}
+
+	nav .secondary.mini .submenu{
+		background-color: black;
+		display: none;
+		position: absolute;
+		width: 200px;
+		right: 0;
+	}
+
+	nav .secondary.mini:hover .submenu{
+		display: block;
+	}
+}
+
+
+/*estilo del fondo animado*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600');
+
+.example-box {
+  background-image: linear-gradient(to bottom right, #eb01a5, #31a4d1);
+  width: 1340px;
+  height: 600px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 200;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1.7);
+}
+
+.example-box * {
+  z-index: 2;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.background-shapes {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5076px;
+  background-size: 100%;
+  animation: 120s infiniteScroll linear infinite;
+  background-repeat-x: repeat;
+  background-image: url(https://cdn2.hubspot.net/hubfs/53/Pricing%202017%20Assets/marketing/Header_Circles-1.svg);
+}
+
+@-webkit-keyframes infiniteScroll {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -1692px, 0);
+    transform: translate3d(0, -1692px, 0);
+  }
+}
+
+@keyframes infiniteScroll {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -1692px, 0);
+    transform: translate3d(0, -1692px, 0);
+  }
+}
+
+
+/*Propiedades que se muestran al reducir el tamaño
+de la pagina web a 500px*/
+@media screen and (max-width: 500px){
+
+	nav .desktop{
+		display: none;
+	}
+
+	nav .mobile{
+		display: block !important;
+	}
+
+	
+
+	.example-box {
+		background-image: linear-gradient(to bottom right, #eb01a5, #31a4d1);
+		width: 483px;
+		height: 600px;
+		margin-left: 5px;
+		margin-right: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		background-size: cover;
+		color: white;
+		font-family: sans-serif;
+		font-weight: 200;
+		z-index: 1;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 1.7);
+	  }
+}

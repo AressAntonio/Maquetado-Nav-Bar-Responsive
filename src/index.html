@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="./css/menu-header.css">
+	<title>MENU-HEADER</title>
+</head>
+<body>
+    <!--barra-menu responsivo-->
+	<nav>
+
+		<!--version movil de menu-cabecera-->
+		<div class="mobile">
+			<div class="header">
+				<div class="logo">LOGO</div>
+				<div class="more"><button id="bmore"><span class="material-symbols-outlined">menu</span></button></div>
+			</div>
+
+			<div class="links" id="links">
+				<a href="#">Services</a>
+				<a href="#">About us</a>
+				<a href="#">Contact</a>
+				<a href="#">Search</a>
+				<a href="#">Sing up</a>
+				<a href="#">Login</a>
+			</div>
+
+		</div>
+
+        <!--version computadora de menu-cabecera-->
+
+		<div class="desktop">
+			<div class="logo">LOGO</div>
+
+			<div class="primary">
+				<a href="#">Services</a>
+				<a href="#">About us</a>
+				<a href="#">Contact</a>
+			</div>
+
+			<div class="secondary full">
+				<a href="#">Search</a>
+				<a href="#">Sing up</a>
+				<a href="#">Login</a>
+			</div>
+
+			<div class="secondary mini">
+				<a href="#" class="more">More</a>
+
+				<div class="submenu">
+				  <a href="#">Search</a>
+				  <a href="#">Sing up</a>
+				  <a href="#">Login</a>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<!---fondo animado--->
+	<div class="example-box">
+		<div class="background-shapes"></div>
+		<h1>Welcome</h1>
+		<p>This is a nav-bar responsive with HTML and CSS.</p>
+	</div>
+
+    <!--script js que sirve para ocultar o mostrar el contenido del menu hamburguesa-->
+	<script>
+		const bmore = document.querySelector('#bmore');
+		const links= document.querySelector('#links');
+
+		bmore.addEventListener('click', (e) =>{
+
+			links.classList.toggle('collapsed');
+		});
+	</script>
+
+</body>
+</html>
